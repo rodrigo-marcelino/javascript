@@ -12,6 +12,14 @@
     color: #BFD1D9;
 }
 
+:root{
+    --cor1: #011826;
+    --cor2: #012E40;
+    --cor3: #5D91A6;
+    --cor4: #8FA1AD;
+    --cor5: #BFD1D9;
+}
+
 body{
     height: 100vh;
     background-color: aliceblue;
