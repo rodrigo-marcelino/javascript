@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        div#area{
+            background-color: #011F26;
+            color: #03A688;
+            width: 200px;
+            height: 200px;
+            border-radius: 16px;
+            line-height: 200px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            margin: 16px auto        
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onmouseenter="entrar()" onmouseout="sair()" >Interaja...</div>
+
+    <script>
+        // DICA: PARA IDENTIFICAÇÃO DE ERROS -> USAR DEVTOOLS
+
+         var a =document.querySelector('div#area');
+         a.addEventListener('click', clicar);
+         a.addEventListener('mouseenter', entrar);
+         a.addEventListener('mouseout', sair)
+        function clicar(){
+            a.innerHTML = 'Clicou';
+            a.style.background = '#026873';
+            a.style.color = '#011F26'; 
+        }
+
+        function entrar(){
+            a.innerText = "Entrou";
+        }
+
+        function sair(){
+            a.innerHTML = "Saiu";
+        }
+    </script>
+</body>
+</html>

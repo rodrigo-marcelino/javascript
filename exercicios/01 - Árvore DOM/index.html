@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Primeiros passos com DOM </title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <h1>Iniciando estudos DOM</h1>
+        </div>
+    </header>
+    <main>
+        <div class="item">
+            <p>Aqui vai o resultado</p>
+        </div>
+        <div class="item">
+            <p>Aprendendo a usar o DOM em JavaScript</p>
+        </div>
+        <div class="item" id="msg">Clique em mim</div>
+        <div class="item">
+            <script>
+                // Selecionando objetos por marca 
+                var p1 = window.document.getElementsByTagName('p')[0] // Estou selecionando o primeiro [0] elemento do array cujos objetos são do tipo 'p'
+                document.write(p1.innerText) // Aqui, eu pego o texto do objeto p[0]
+
+                // Selecionando objetos por id
+                var d = document.getElementById('msg')
+                d.style.background = 'black'
+
+                // Selecionando por Name
+                // Selecionando por Class
+                // Selecionando por Seletor
+
+                var k = document.querySelector('div#msg')
+                k.innerText = 'Alterei o texto por JS'
+
+            </script>
+        </div>
+    
+    </main>
+</body>
+</html>

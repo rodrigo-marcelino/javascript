@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="tit">
+                <h1>CALCULADORA</h1>
+            </div>
+            <div class="item"> <input type="number" name="txtn1" id="txtn1"></div>
+            <div class="item"><input type="number" name="txtn2" id="txtn2"></div>
+            <div class="item">
+                <input type="button" value="Calcular" id="btnCalc">
+            </div>
+            <div class='item' id="resultado">Resultado</div>
+        </div>
+        
+    </main>
+    <script>
+        var btnCalc = document.getElementById('btnCalc');
+        btnCalc.addEventListener('click', somar);
+        
+        function somar(){
+            var t1 = document.getElementById('txtn1');
+            var t2 = document.querySelector('input#txtn2');
+            var resultado = document.getElementById('resultado');
+            var s = Number(t1.value) + Number(t2.value);
+
+            resultado.innerHTML = s > 0? `Resultado positivo: ${s}`: `Resultado negativo: ${s}`;
+        }
+        
+    </script>
+</body>
+</html>
