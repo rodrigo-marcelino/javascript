@@ -1,17 +1,19 @@
 /*
-Higher-order function: takes one or more functions as arguments.
-Callback functions: function that is passed as an argument to another function.
+    * Higher-order function: takes one or more functions as arguments.
+    * Callback functions: function that is passed as an argument to another function.
 
-VEJA MAIS MÉTODOS DE ARRAYS NA DOCUMENTAÇÃO: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+    * VEJA MAIS MÉTODOS DE ARRAYS NA DOCUMENTAÇÃO: 
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+    https://www.codecademy.com/resources/docs/javascript/functions?page_ref=catalog
 
 ============================== forEach() =====================================
-1) groceries.forEach() calls the forEach method on the groceries array.
+    1) groceries.forEach() chama o método forEach() do vetor;
 
-2) .forEach() takes an argument of callback function. Remember, a callback function is a function passed as na argument into another function.
+    2) .forEach() toma como argumento uma função, ou seja, uma callback function. 
 
-3) .forEach() loops through the array and executes the callback function for each element. During each execution, the current element is passed as an argument to the callback function.
+    3) .forEach() itera pelo array e executa a callback function para cada elemento. Durante cada iteração, o elemento atual é passado como argumento para a callback function.
 
-4) The return value for .forEach() will always be undefined.
+    4) .forEach() não retorna nenhum valor, ou melhor 'undefined'.
 */
     const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
     console.log('Usando o .forEach(): ')

@@ -27,6 +27,13 @@ let spaceship = {
     }
 }; 
 
+/* 
+    *o for...in é utilizado para varrer objetos literais em que as propriedades não consguimos numerar
+    * for (let key in objeto) {
+         Acessar a propriedade (key) e o valor (objeto[key])
+    }
+
+*/
 for (let member in spaceship.crew){
     console.log(`${member}: ${spaceship.crew[member].name}`)
 }
